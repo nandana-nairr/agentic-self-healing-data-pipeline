@@ -1,0 +1,21 @@
+# Local dev dependencies (Python 3.11)
+boto3==1.34.0
+pandas==2.2.0
+pyarrow==15.0.0
+pytest==8.2.0
+python-dotenv==1.0.1
+requests==2.31.0
+sqlalchemy==1.4.46
+psycopg2-binary==2.9.9
+dbt-core==1.7.0
+dbt-postgres==1.7.0
+great-expectations==0.18.15
+
+# These run inside Docker/Airflow container — not needed locally
+# apache-airflow==2.9.1
+# apache-airflow-provi
+#ders-amazon==8.22.0
+# dbt-core==1.8.0
+# dbt-redshift==1.8.0
+# great-expectations==0.18.15
+# psycopg2-binary==2.9.9

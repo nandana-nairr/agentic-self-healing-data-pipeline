@@ -1,0 +1,42 @@
+executor: LocalExecutor
+
+redis:
+  enabled: false
+
+flower:
+  enabled: false
+
+statsd:
+  enabled: false
+
+dagProcessor:
+  enabled: false
+
+logs:
+  persistence:
+    enabled: false
+
+dags:
+  persistence:
+    enabled: false
+
+scheduler:
+  resources:
+    requests:
+      memory: "256Mi"
+      cpu: "100m"
+    limits:
+      memory: "512Mi"
+      cpu: "300m"
+
+webserver:
+  resources:
+    requests:
+      memory: "256Mi"
+      cpu: "100m"
+    limits:
+      memory: "512Mi"
+      cpu: "300m"
+
+postgresql:
+  enabled: true

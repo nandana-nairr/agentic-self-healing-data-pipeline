@@ -1,0 +1,26 @@
+# secrets
+.env
+docker/.env
+
+# python
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# dbt
+dbt/ecommerce/target/
+dbt/ecommerce/logs/
+dbt/logs/
+
+# airflow
+logs/
+
+# vscode
+.vscode/
+
+# windows
+.wslconfig
+
+# misc
+*.log

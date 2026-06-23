@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: olist
+    database: ecommerce_pipeline
+    schema: public
+    tables:
+      - name: raw_orders
+      - name: raw_order_items
+      - name: raw_customers
+      - name: raw_products
+      - name: raw_sellers
+      - name: raw_payments
+      - name: raw_reviews

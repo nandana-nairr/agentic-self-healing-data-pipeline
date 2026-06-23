@@ -1,0 +1,8 @@
+# requirements-airflow.txt — used inside Docker
+apache-airflow==2.9.1
+boto3==1.34.0
+pandas==2.2.0
+pyarrow==15.0.0
+requests==2.31.0
+python-dotenv==1.0.1
+psycopg2-binary==2.9.9

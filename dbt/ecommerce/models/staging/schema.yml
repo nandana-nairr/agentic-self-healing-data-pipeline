@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: "Cleaned orders from Olist raw data"
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        tests:
+          - not_null
+      - name: order_status
+        tests:
+          - accepted_values:
+              values: ['delivered','shipped','canceled','unavailable',
+                       'invoiced','processing','created','approved']
+  - name: stg_payments
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+      - name: payment_value
+        tests:
+          - not_null
